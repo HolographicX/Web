@@ -164,7 +164,12 @@ const scheduleData: StreamEvent[] = [
   },
   {
     id: "32",
-    title: "Wiley Radio Tinydesk Concert",
+    title: "Dining with a Guy named AJ",
+    time: "2026-04-01T21:30:00",
+  },
+  {
+    id: "32",
+    title: "Wiley Radio Tinydesk Concert - Real Nothing",
     time: "2026-04-02T19:00:00",
   },
   {

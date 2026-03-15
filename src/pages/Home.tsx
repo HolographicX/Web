@@ -15,7 +15,8 @@ export default function Home() {
           HackFrom<span className="text-orange-500">Scratch</span>
         </h1>
         <p className="text-xl text-slate-400 mb-10 text-center max-w-2xl px-4">
-          A 168-hour live broadcast supporting early STEM education through the Scratch Foundation.
+          A week-long charity stream/creative jam uniting Purdue creators to support the Scratch
+          Foundation.
         </p>
 
         {/* Video Embed */}
