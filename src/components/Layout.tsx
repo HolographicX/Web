@@ -4,23 +4,51 @@ import { Outlet, Link, useLocation } from "react-router-dom";
 export default function Layout() {
   const location = useLocation();
   const participatingClubs = [
-    { src: "/clubs/adliberation.jpeg", alt: "Ad Liberation" },
-    { src: "/clubs/catalyst.png", alt: "Catalyst" },
-    { src: "/clubs/cosplayclub.jpg", alt: "Cosplay Club" },
-    { src: "/clubs/creativecodingclub.jpeg", alt: "Creative Coding Club" },
-    { src: "/clubs/creativewritingclub.png", alt: "Creative Writing Club" },
-    { src: "/clubs/fantasyclub.jpeg", alt: "Fantasy Club" },
-    { src: "/clubs/hackindy.jpeg", alt: "Hack Indy" },
-    { src: "/clubs/lifeonthewabash.jpg", alt: "Life on the Wabash" },
-    { src: "/clubs/magicthegathering.jpeg", alt: "Magic the Gathering" },
-    { src: "/clubs/purduechessclub.png", alt: "Purdue Chess Club" },
-    { src: "/clubs/purduehackers.jpeg", alt: "Purdue Hackers" },
-    { src: "/clubs/rr.jpeg", alt: "RR" },
-    { src: "/clubs/rubegoldberg.jpeg", alt: "Rube Goldberg Club" },
-    { src: "/clubs/runclub.png", alt: "Run Club" },
-    { src: "/clubs/search.jpeg", alt: "SEARCH" },
-    { src: "/clubs/siggd.png", alt: "SIGGD" },
-    { src: "/clubs/touchgrass.png", alt: "Touch Grass Club" },
+    { src: "/clubs/adliberation.jpeg", alt: "Ad Liberation", link: "https://adliberation.net/" },
+    { src: "/clubs/catalyst.png", alt: "Catalyst", link: "" },
+    { src: "/clubs/cosplayclub.jpg", alt: "Cosplay Club", link: "" },
+    { src: "/clubs/creativecodingclub.jpeg", alt: "Creative Coding Club", link: "" },
+    {
+      src: "/clubs/creativewritingclub.png",
+      alt: "Creative Writing Club",
+      link: "https://discord.gg/G2mUjyA",
+    },
+    { src: "/clubs/fantasyclub.jpeg", alt: "Fantasy Club", link: "" },
+    { src: "/clubs/hackindy.jpeg", alt: "Hack Indy", link: "https://www.hackindy.io/" },
+    {
+      src: "/clubs/lifeonthewabash.jpg",
+      alt: "Life on the Wabash",
+      link: "https://www.youtube.com/@LifeOnTheWabash",
+    },
+    { src: "/clubs/magicthegathering.jpeg", alt: "Magic the Gathering", link: "" },
+    { src: "/clubs/purduechessclub.png", alt: "Purdue Chess Club", link: "" },
+    {
+      src: "/clubs/purduehackers.jpeg",
+      alt: "Purdue Hackers",
+      link: "https://www.purduehackers.com/",
+    },
+    {
+      src: "/clubs/rr.jpeg",
+      alt: "RR",
+      link: "https://sites.google.com/view/railsiderobotics/home?authuser=0",
+    },
+    {
+      src: "/clubs/rubegoldberg.jpeg",
+      alt: "Rube Goldberg Club",
+      link: "https://boilermakerrubegoldberg.com/",
+    },
+    { src: "/clubs/runclub.png", alt: "Run Club", link: "" },
+    {
+      src: "/clubs/search.jpeg",
+      alt: "SEARCH",
+      link: "https://www.instagram.com/purdue_search?igsh=MXdqY2Rzd3ZydHlhZw==",
+    },
+    { src: "/clubs/siggd.png", alt: "SIGGD", link: "https://purduesiggd.github.io/" },
+    {
+      src: "/clubs/touchgrass.png",
+      alt: "Touch Grass Club",
+      link: "https://www.instagram.com/p/DTt3k18DdWV/",
+    },
     // { src: "/clubs/caryclub.png", alt: "Cary Club" }, // Elevated to Sponsor
     // { src: "/clubs/mcutroyalhighlanders.jpeg", alt: "McCutcheon" }, // Elevated to Sponsor
   ];
@@ -67,32 +95,56 @@ export default function Layout() {
         {/* Sponsor Grid */}
         <h3 className="text-xl font-bold text-slate-400 mb-6">Sponsored By</h3>
         <div className="flex flex-wrap justify-center items-center gap-8 mb-12 opacity-90 grayscale hover:grayscale-0 transition-all duration-500">
-          <img
-            src="/sponsors/purdueinnovates.jpg"
-            alt="Purdue Innovates"
-            className="h-12 object-contain"
-          />
-          <img src="/sponsors/caryclub.png" alt="Cary Club" className="h-12 object-contain" />
-          <img src="/sponsors/wl9.png" alt="Cary Club" className="h-12 object-contain" />
-          <img
-            src="/sponsors/mcutroyalhighlanders.jpeg"
-            alt="McCutcheon Royal Highlanders"
-            className="h-12 object-contain"
-          />
-          <img src="/sponsors/datamine.png" alt="The Data Mine" className="h-12 object-contain" />
+          <a href="https://purdueinnovates.org/" rel="noopener noreferrer">
+            <img
+              src="/sponsors/purdueinnovates.jpg"
+              alt="Purdue Innovates"
+              className="h-12 object-contain"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/purdue_cary_club/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src="/sponsors/caryclub.png" alt="Cary Club" className="h-12 object-contain" />
+          </a>
+          <a
+            href="https://www.gqtmovies.com/gqt-wabash-landing-9"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src="/sponsors/wl9.png" alt="Wabash Landing 9" className="h-12 object-contain" />
+          </a>
+          <a
+            href="https://www.instagram.com/mchighlanders/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              src="/sponsors/mcutroyalhighlanders.jpeg"
+              alt="McCutcheon Royal Highlanders"
+              className="h-12 object-contain"
+            />
+          </a>
+          <a href="https://datamine.purdue.edu/" rel="noopener noreferrer" target="_blank">
+            <img src="/sponsors/datamine.png" alt="The Data Mine" className="h-12 object-contain" />
+          </a>
         </div>
 
         {/* Club Grid */}
         <h3 className="text-lg font-bold text-slate-500 mb-6">Featuring Student Creators From</h3>
         <div className="flex flex-wrap justify-center items-center gap-6 mb-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
           {participatingClubs.map((club, index) => (
-            <img
-              key={index}
-              src={club.src}
-              alt={club.alt}
-              title={club.alt} /* Adds a nice hover tooltip for the club name */
-              className="h-10 object-contain rounded-md" /* Added rounded-md in case some jpegs have sharp white corners */
-            />
+            <a href={club.link} rel="noopener noreferrer" target="_blank">
+              <img
+                key={index}
+                src={club.src}
+                alt={club.alt}
+                title={club.alt} /* Adds a nice hover tooltip for the club name */
+                className="h-10 object-contain rounded-md" /* Added rounded-md in case some jpegs have sharp white corners */
+              />
+            </a>
           ))}
         </div>
       </div>
