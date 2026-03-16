@@ -32,7 +32,7 @@ export default function Donate() {
       {/* HEADER */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          Support the <span className="text-orange-500">Scratch Foundation</span>
+          Support the <span className="text-[#fcc15a]">Scratch Foundation</span>
         </h1>
         <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
           All donations go directly to the Scratch Foundation. Purdue Innovates will match donations
@@ -65,7 +65,7 @@ export default function Donate() {
       {/* THE TILTIFY CTA BILLBOARD */}
       <div className="max-w-3xl mx-auto bg-slate-900 p-12 rounded-3xl border-2 border-slate-800 shadow-2xl text-center relative overflow-hidden">
         {/* Decorative glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-orange-500/5 blur-[60px] pointer-events-none"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[#fcc15a]/5 blur-[60px] pointer-events-none"></div>
 
         <div className="relative z-10">
           <h2 className="text-3xl md:text-4xl font-black mb-6 text-white uppercase tracking-tight">
@@ -81,7 +81,7 @@ export default function Donate() {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-12 py-5 bg-orange-500 hover:bg-orange-400 text-slate-900 font-black text-xl rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:-translate-y-1 uppercase tracking-tight"
+            className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-12 py-5 bg-[#fcc15a] hover:bg-orange-400 text-slate-900 font-black text-xl rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:-translate-y-1 uppercase tracking-tight"
           >
             <i className="fa-solid fa-heart"></i> Donate on Tiltify
           </a>

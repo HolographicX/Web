@@ -11,7 +11,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className="w-full pt-12 flex flex-col items-center">
         <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-6 text-center tracking-tight">
-          HackFrom<span className="text-orange-500">Scratch</span>
+          HackFrom<span className="text-[#fcc15a]">Scratch</span>
         </h1>
         <p className="text-xl text-slate-400 mb-10 text-center max-w-2xl px-4">
           A week-long charity stream/creative jam uniting Purdue creators to support the Scratch
@@ -34,7 +34,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 px-4">
           <Link
             to="/donate"
-            className="px-8 py-4 bg-orange-500 hover:bg-orange-400 text-slate-900 font-bold text-lg rounded-lg shadow-lg transition-transform hover:-translate-y-1 text-center"
+            className="px-8 py-4 bg-[#fcc15a] hover:bg-orange-400 text-slate-900 font-bold text-lg rounded-lg shadow-lg transition-transform hover:-translate-y-1 text-center"
           >
             Donate & Claim Rewards
           </Link>
@@ -65,7 +65,7 @@ export default function Home() {
           {/* Mission Text */}
           <div>
             <h2 className="text-3xl font-bold mb-6 text-white">
-              Why We Support the <span className="text-orange-500">Scratch Foundation</span>
+              Why We Support the <span className="text-[#fcc15a]">Scratch Foundation</span>
             </h2>
             <p className="text-slate-400 mb-6 leading-relaxed">
               At Purdue, we've been given the tools to build the future. But for millions of kids,
@@ -89,12 +89,12 @@ export default function Home() {
                 $0 <span className="text-lg text-slate-400 font-normal">raised so far</span>
               </p>
             </div>
-            <p className="text-xl font-bold text-orange-500">$10,000</p>
+            <p className="text-xl font-bold text-[#fcc15a]">$10,000</p>
           </div>
           <div className="w-full bg-slate-900 rounded-full h-4 overflow-hidden border border-slate-700">
             {/* Change the width percentage as donations come in */}
             <div
-              className="bg-orange-500 h-4 rounded-full transition-all duration-1000"
+              className="bg-[#fcc15a] h-4 rounded-full transition-all duration-1000"
               style={{ width: "5%" }}
             ></div>
           </div>

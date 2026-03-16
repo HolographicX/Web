@@ -56,7 +56,7 @@ export default function Layout() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-orange-500 selection:text-white flex flex-col">
+    <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-[#fcc15a] selection:text-white flex flex-col">
       <nav className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur border-b border-slate-800 p-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link
@@ -65,7 +65,7 @@ export default function Layout() {
           >
             <img src="/logo.png" alt="HackFromScratch" className="w-10 h-10 object-contain" />
             <span>
-              HackFrom<span className="text-orange-500">Scratch</span>
+              HackFrom<span className="text-[#fcc15a]">Scratch</span>
             </span>
           </Link>
 
@@ -81,7 +81,7 @@ export default function Layout() {
 
             <Link
               to="/donate"
-              className="bg-orange-500 hover:bg-orange-400 text-slate-900 px-6 py-2 rounded-lg font-bold shadow-lg transition-transform hover:-translate-y-0.5"
+              className="bg-[#fcc15a] hover:bg-orange-400 text-slate-900 px-6 py-2 rounded-lg font-bold shadow-lg transition-transform hover:-translate-y-0.5"
             >
               Donate
             </Link>

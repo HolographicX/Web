@@ -87,7 +87,7 @@ export default function CreativeJam() {
       <div className="mb-16">
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
           The Creative{" "}
-          <span className="text-orange-500 font-black tracking-tighter uppercase italic text-glow">
+          <span className="text-[#fcc15a] font-black tracking-tighter uppercase italic text-glow">
             Jam
           </span>
         </h1>
@@ -111,7 +111,7 @@ export default function CreativeJam() {
                 onClick={() => setActiveCategory(i)}
                 className={`w-full text-left p-6 rounded-2xl border-2 transition-all duration-300 group relative overflow-hidden ${
                   activeCategory === i
-                    ? "border-orange-500 bg-orange-500/10 shadow-lg shadow-orange-500/5"
+                    ? "border-orange-500 bg-[#fcc15a]/10 shadow-lg shadow-orange-500/5"
                     : "border-slate-800 bg-slate-900/50 hover:border-slate-700"
                 }`}
               >
@@ -151,7 +151,7 @@ export default function CreativeJam() {
                     />
                   </div>
                   <div>
-                    <p className="text-[10px] font-black text-orange-500 uppercase tracking-widest">
+                    <p className="text-[10px] font-black text-[#fcc15a] uppercase tracking-widest">
                       Official Judge
                     </p>
                     <h2 className="text-xl font-bold text-white leading-tight">
@@ -172,8 +172,8 @@ export default function CreativeJam() {
                     className="flex items-start gap-4 animate-in slide-in-from-left-4 duration-300"
                     style={{ transitionDelay: `${i * 50}ms` }}
                   >
-                    <div className="w-6 h-6 bg-orange-500/10 rounded-full flex items-center justify-center shrink-0 mt-1">
-                      <i className="fa-solid fa-check text-orange-500 text-[10px]"></i>
+                    <div className="w-6 h-6 bg-[#fcc15a]/10 rounded-full flex items-center justify-center shrink-0 mt-1">
+                      <i className="fa-solid fa-check text-[#fcc15a] text-[10px]"></i>
                     </div>
                     <span className="text-slate-200 font-medium">{item}</span>
                   </li>
@@ -183,7 +183,7 @@ export default function CreativeJam() {
               {/* Reward/Prize Hint */}
               <div className="mt-12 bg-slate-900/50 p-5 rounded-2xl border border-slate-700/50">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-slate-900 shadow-lg shadow-orange-500/20">
+                  <div className="w-10 h-10 bg-[#fcc15a] rounded-full flex items-center justify-center text-slate-900 shadow-lg shadow-orange-500/20">
                     <i className="fa-solid fa-gift"></i>
                   </div>
                   <p className="text-sm text-slate-400">
@@ -198,7 +198,7 @@ export default function CreativeJam() {
 
       {/* SUBMISSION BLOCK */}
       <div className="bg-slate-950 p-10 rounded-3xl border border-slate-800 relative shadow-2xl">
-        <div className="absolute top-0 right-10 -translate-y-1/2 bg-orange-500 text-slate-900 font-black px-4 py-1 rounded text-xs uppercase tracking-tighter">
+        <div className="absolute top-0 right-10 -translate-y-1/2 bg-[#fcc15a] text-slate-900 font-black px-4 py-1 rounded text-xs uppercase tracking-tighter">
           Submit Now
         </div>
 
@@ -240,7 +240,7 @@ export default function CreativeJam() {
 
           <button
             type="submit"
-            className="w-full bg-white hover:bg-orange-500 hover:text-slate-950 text-slate-950 font-black text-lg py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 uppercase tracking-tight"
+            className="w-full bg-white hover:bg-[#fcc15a] hover:text-slate-950 text-slate-950 font-black text-lg py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 uppercase tracking-tight"
           >
             Lock In Final Entry
           </button>
