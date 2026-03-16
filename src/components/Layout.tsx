@@ -99,13 +99,13 @@ export default function Layout() {
           Sponsored By
         </h3>
         <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16 mb-16 opacity-90 grayscale hover:grayscale-0 transition-all duration-500">
-          {/* <a href="https://purdueinnovates.org/" rel="noopener noreferrer">
+          <a href="https://purdueinnovates.org/" rel="noopener noreferrer">
             <img
               src="/sponsors/purdueinnovates.jpg"
               alt="Purdue Innovates"
               className="h-20 md:h-24 object-contain"
             />
-          </a> */}
+          </a>
           <a
             href="https://www.instagram.com/purdue_cary_club/"
             rel="noopener noreferrer"
