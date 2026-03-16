@@ -34,7 +34,7 @@ export default function Donate() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
           Support the <span className="text-[#fcc15a]">Scratch Foundation</span>
         </h1>
-        <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
           All donations go directly to the Scratch Foundation. Purdue Innovates will match donations
           by supporting student creators and their creative work—meaning that you can get some
           awesome student-made swag for donating! Check out the reward tiers below.
@@ -46,13 +46,13 @@ export default function Donate() {
         {tiers.map((tier, idx) => (
           <div
             key={idx}
-            className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] p-8 rounded-3xl border border-slate-700 bg-slate-800/40 hover:bg-slate-800 transition-all duration-300 flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] hover:border-orange-500/50 group"
+            className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] p-8 rounded-3xl border border-slate-700 bg-slate-800/90 hover:bg-slate-800 transition-all duration-300 flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] hover:border-orange-500/50 group"
           >
             <h3 className="text-2xl font-bold mb-2 text-slate-200 group-hover:text-white transition-colors">
               {tier.name}
             </h3>
             <div className="mb-4">
-              <span className="text-4xl font-black text-orange-400">${tier.price}</span>
+              <span className="text-4xl font-black text-[#fcc15a]">${tier.price}</span>
               <span className="text-slate-500 font-bold text-sm ml-2 uppercase tracking-widest">
                 Tier
               </span>
