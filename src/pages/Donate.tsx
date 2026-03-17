@@ -35,8 +35,8 @@ export default function Donate() {
           Support the <span className="text-[#fcc15a]">Scratch Foundation</span>
         </h1>
         <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
-          All donations go directly to the Scratch Foundation. Purdue Innovates will match donations
-          by supporting student creators and their creative work—meaning that you can get some
+          All donations go directly to the Scratch Foundation. Our sponsors will match donations by
+          supporting student creators and their creative work - meaning that you can get some
           awesome student-made swag for donating! Check out the reward tiers below.
         </p>
       </div>
