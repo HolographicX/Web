@@ -4,7 +4,11 @@ export default function Layout() {
   const location = useLocation();
   const participatingClubs = [
     { src: "/clubs/adliberation.jpeg", alt: "Ad Liberation", link: "https://adliberation.net/" },
-    { src: "/clubs/catalyst.png", alt: "Catalyst", link: "https://www.instagram.com/catalyst_purdue/" },
+    {
+      src: "/clubs/catalyst.png",
+      alt: "Catalyst",
+      link: "https://www.instagram.com/catalyst_purdue/",
+    },
     { src: "/clubs/cosplayclub.jpg", alt: "Cosplay Club", link: "" },
     { src: "/clubs/creativecodingclub.jpeg", alt: "Creative Coding Club", link: "" },
     {
@@ -73,7 +77,9 @@ export default function Layout() {
             <Link
               to="/jam"
               className={`transition-colors ${
-                location.pathname === "/jam" ? "text-[#fcc15a]" : "text-slate-900 hover:text-[#fcc15a]"
+                location.pathname === "/jam"
+                  ? "text-[#fcc15a]"
+                  : "text-slate-900 hover:text-[#fcc15a]"
               }`}
             >
               Creative Jam
@@ -143,6 +149,22 @@ export default function Layout() {
             <img
               src="/sponsors/datamine.png"
               alt="The Data Mine"
+              className="h-20 md:h-24 object-contain"
+            />
+          </a>
+
+          <a href="https://www.ableton.com/en/" rel="noopener noreferrer" target="_blank">
+            <img
+              src="/sponsors/ableton.webp"
+              alt="Ableton"
+              className="h-20 md:h-24 object-contain"
+            />
+          </a>
+
+          <a href="https://uunatek.com/" rel="noopener noreferrer" target="_blank">
+            <img
+              src="/sponsors/uunatek.png"
+              alt="Uuna Tek"
               className="h-20 md:h-24 object-contain"
             />
           </a>
