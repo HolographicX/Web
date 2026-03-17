@@ -29,6 +29,21 @@ export default function Home() {
             ></iframe>
           </div>
         </div> */}
+        <div className="w-full max-w-5xl px-4 mb-10">
+          <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-slate-800 shadow-2xl shadow-orange-900/20">
+            <video
+              className="absolute top-0 left-0 w-full h-full object-cover"
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/hackfromscratchad.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 px-4">

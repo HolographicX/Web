@@ -4,7 +4,7 @@ export default function Layout() {
   const location = useLocation();
   const participatingClubs = [
     { src: "/clubs/adliberation.jpeg", alt: "Ad Liberation", link: "https://adliberation.net/" },
-    { src: "/clubs/catalyst.png", alt: "Catalyst", link: "" },
+    { src: "/clubs/catalyst.png", alt: "Catalyst", link: "https://www.instagram.com/catalyst_purdue/" },
     { src: "/clubs/cosplayclub.jpg", alt: "Cosplay Club", link: "" },
     { src: "/clubs/creativecodingclub.jpeg", alt: "Creative Coding Club", link: "" },
     {
