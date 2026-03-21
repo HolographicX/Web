@@ -128,7 +128,7 @@ export default function CreativeJam() {
                 </div>
                 <p
                   className={`mt-2 text-sm leading-relaxed relative z-10 ${
-                    activeCategory === i ? "text-[var(--text)]" : "text-slate-300"
+                    activeCategory === i ? "text-[var(--text)]" : "text-slate-600"
                   }`}
                 >
                   {cat.desc}
