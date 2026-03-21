@@ -3,3 +3,38 @@
 html {
   scroll-behavior: smooth;
 }
+
+:root {
+  --color-accent: #EFA736;
+  --color-secondary: #4E95F6;
+  --color-secondary-dark: #6F85A4;
+  --text: #161616ff;
+  --text-light: rgb(243, 243, 243);
+  --text-grey: #e0e4f0;
+}
+
+@layer base {
+  h1 {
+    font-family: "ScratchFont", sans-serif;
+    -webkit-text-stroke: 1.2px currentColor;
+  }
+  h2 {
+    font-family: "ScratchFont", sans-serif;
+    -webkit-text-stroke: 0.8px currentColor;
+  }
+}
+
+@font-face {
+  font-family: "ScratchFont";
+  src: url("/fonts/BLACKBOYSONMOPEDS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-heading {
+  font-family: "ScratchFont", sans-serif;
+}
+.font-heading-bold {
+  font-family: "ScratchFont", sans-serif;
+  -webkit-text-stroke: 0.8px currentColor;
+}

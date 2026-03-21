@@ -1,4 +1,4 @@
-import { Outlet, Link, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 export default function Layout() {
   const location = useLocation();
@@ -86,15 +86,41 @@ export default function Layout() {
   return (
     <div className="min-h-screen bg-[#f7f0db] text-slate-900 font-sans selection:bg-[#dbae53] selection:text-slate-900 flex flex-col">
       <nav className="sticky top-0 z-50 bg-[#f7f0db]/90 backdrop-blur border-b border-[#d7c9a8] p-4">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="max-w-7xl mx-auto flex justify-between items-center font-heading">
           <Link
             to="/"
             className="text-2xl font-bold flex items-center gap-3 transition-transform hover:scale-105"
           >
-            <img src="/logo.png" alt="HackFromScratch" className="w-10 h-10 object-contain" />
-            <span>
-              HackFrom<span className="text-[#fcc15a]">Scratch</span>
-            </span>
+            <img src="/logo.png" alt="HackFromScratch" className="w-15 h-15 object-contain" />
+            {/* Text */}
+            <div className="flex items-center">
+              {/* HackFrom */}
+              <div className="relative">
+                {/* Stroke */}
+                <span className="absolute inset-0 text-transparent [-webkit-text-stroke:8px_var(--text)] font-bold">
+                  HackFrom
+                </span>
+                {/* Fill */}
+                <span className="relative text-[var(--text-light)] font-bold">
+                  HackFrom
+                </span>
+              </div>
+
+              {/* Small space */}
+              <div className="w-1"></div>
+
+              {/* Scratch */}
+              <div className="relative">
+                {/* Stroke */}
+                <span className="absolute inset-0 text-transparent [-webkit-text-stroke:8px_var(--color-accent)] font-bold">
+                  Scratch
+                </span>
+                {/* Fill */}
+                <span className="relative text-[var(--text-light)] font-bold">
+                  Scratch
+                </span>
+              </div>
+            </div>
           </Link>
 
           <div className="flex items-center gap-6 font-semibold">
@@ -102,8 +128,8 @@ export default function Layout() {
               to="/jam"
               className={`transition-colors ${
                 location.pathname === "/jam"
-                  ? "text-[#fcc15a]"
-                  : "text-slate-900 hover:text-[#fcc15a]"
+                  ? "text-[var(--color-accent)]"
+                  : "text-slate-900 hover:text-[var(--color-accent)]"
               }`}
             >
               Creative Jam
@@ -111,7 +137,7 @@ export default function Layout() {
 
             <Link
               to="/donate"
-              className="bg-[#fcc15a] hover:bg-orange-400 text-slate-900 px-6 py-2 rounded-lg font-bold shadow-lg transition-transform hover:-translate-y-0.5"
+              className="bg-[var(--color-accent)] hover:bg-orange-400 text-slate-900 px-6 py-2 rounded-lg font-bold shadow-lg transition-transform hover:-translate-y-0.5"
             >
               Donate
             </Link>
