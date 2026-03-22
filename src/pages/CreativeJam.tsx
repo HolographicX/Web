@@ -153,7 +153,7 @@ export default function CreativeJam() {
                   </div>
                   <div>
                     <p className="text-[10px] font-black text-[var(--color-accent)] uppercase tracking-widest">
-                      Presented By
+                      Brought to you by
                     </p>
                     <h2 className="text-xl font-bold text-white leading-tight">
                       {categories[activeCategory].judge}
