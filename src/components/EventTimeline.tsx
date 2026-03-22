@@ -101,7 +101,7 @@ const scheduleData: StreamEvent[] = [
     time: "2026-04-01T18:45:00",
   },
   {
-    title: "AJ Does Anything for $5,000 feat. AJ Collins",
+    title: "AJ Does Anything for $5,000 feat. AJ",
     time: "2026-04-01T19:15:00",
     isMilestone: true,
   },
