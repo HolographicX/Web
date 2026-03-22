@@ -4,26 +4,41 @@ export default function Donate() {
       price: 15,
       name: "The Swag Bag",
       desc: "Custom stickers, buttons, a laser-cut badge, and a custom printed receipt.",
+      bg: "bg-[var(--color-secondary)]",
+      image: "/gold-front.png",
     },
     {
       price: 25,
       name: "The Audio",
       desc: "Everything above, PLUS your choice of the PMP Compilation CD or the SIGGD Echoes of Isovios OST CD.",
+      bg: "bg-[#A680FF]",
+      image: "/rewards/pmp.png",
+      image2: "/rewards/siggd.png",
     },
     {
       price: 40,
       name: "The Lore",
       desc: "Everything in the Swag Bag, PLUS your choice of the Sighorse book or the Creative Writing Club book.",
+      bg: "bg-[#95D887]",
+      image: "/rewards/creative-writing-club.png",
+      image2: "/rewards/sighorse.png",
     },
     {
       price: 50,
       name: "The Shirt",
       desc: "The official HackFromScratch multi-color t-shirt, printed on-demand just for you.",
+      bg: "bg-[#84C1E2]",
+      image: "/rewards/shirt-front.png",
+      image2: "/rewards/shirt-back.png",
+
     },
     {
       price: 100,
       name: "VIP",
       desc: "Literally everything. Shirt, both books, both CDs, all the swag, signed by the creators.",
+      bg: "bg-[#D07AD8]",
+      image: "/rewards/everything1.png",
+      image2: "/rewards/everything2.png",
     },
   ];
 
@@ -32,7 +47,7 @@ export default function Donate() {
       {/* HEADER */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          Support the <span className="text-[#fcc15a]">Scratch Foundation</span>
+          Support the <span className="text-[var(--color-accent)]">Scratch Foundation</span>
         </h1>
         <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
           All donations go directly to the Scratch Foundation. Our sponsors will match donations by
@@ -46,26 +61,82 @@ export default function Donate() {
         {tiers.map((tier, idx) => (
           <div
             key={idx}
-            className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] p-8 rounded-3xl border border-slate-700 bg-slate-800/90 hover:bg-slate-800 transition-all duration-300 flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)] hover:border-orange-500/50 group"
+            className={`relative overflow-visible w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]
+            p-8 rounded-3xl border border-slate-700 ${tier.bg}
+            hover:bg-[#EFD8A4] transition-all duration-300
+            flex flex-col hover:-translate-y-1
+            hover:shadow-[0_10px_30px_rgba(249,115,22,0.1)]
+            hover:border-orange-500/50 group`}
           >
-            <h3 className="text-2xl font-bold mb-2 text-slate-200 group-hover:text-white transition-colors">
+
+            {/* Floating Reward Image */}
+            <a
+                href={tier.image || tier.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  absolute -top-8 -right-6
+                  w-40 h-40
+                  block
+                  cursor-pointer
+                  [perspective:1000px]
+                  transition-all duration-300
+                  group-hover:scale-150 group-hover:animate-bounce
+                  group-hover:-translate-y-2
+                "
+              >
+              <div
+                className={`
+                  relative w-full h-full
+                  ${tier.image2 ? "animate-(--animate-flip-x)" : ""}
+                  [transform-style:preserve-3d]
+                `}
+              >
+                {/* Front */}
+                <img
+                  src={tier.image}
+                  alt=" "
+                  className="
+                    absolute w-full h-full object-contain
+                    backface-hidden
+                    rounded-xl
+                  "
+                />
+
+                {/* Back (only if exists) */}
+                {tier.image2 && (
+                  <img
+                    src={tier.image2}
+                    alt=" "
+                    className="
+                      absolute w-full h-full object-contain
+                      rotate-y-180
+                      backface-hidden
+                      drop-shadow-xl
+                    "
+                  />
+                )}
+              </div>
+            </a>
+
+            <h3 className="text-2xl font-bold mb-2 text-slate-200 group-hover:text-slate-900 transition-colors">
               {tier.name}
             </h3>
             <div className="mb-4">
-              <span className="text-4xl font-black text-[#fcc15a]">${tier.price}</span>
-              <span className="text-slate-500 font-bold text-sm ml-2 uppercase tracking-widest">
+              <span className="text-4xl font-black text-[var(--color-accent)]">${tier.price}</span>
+              <span className="text-slate-300 group-hover:text-slate-700 font-bold text-sm ml-2 uppercase tracking-widest">
                 Tier
               </span>
             </div>
-            <p className="text-slate-300 flex-grow leading-relaxed">{tier.desc}</p>
+            <p className="text-slate-200 group-hover:text-slate-800 flex-grow leading-relaxed">{tier.desc}</p>
           </div>
         ))}
       </div>
 
       {/* THE TILTIFY CTA BILLBOARD */}
-      <div className="max-w-3xl mx-auto bg-slate-900 p-12 rounded-3xl border-2 border-slate-800 shadow-2xl text-center relative overflow-hidden">
+      <div className="max-w-3xl mx-auto bg-slate-900 p-12 rounded-3xl border-2 border-[var(--color-secondary)] shadow-2xl text-center relative overflow-hidden">
         {/* Decorative glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[#fcc15a]/5 blur-[60px] pointer-events-none"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[var(--color-accent)]/5 blur-[60px] pointer-events-none"></div>
 
         <div className="relative z-10">
           <h2 className="text-3xl md:text-4xl font-black mb-6 text-white uppercase tracking-tight">
@@ -81,7 +152,7 @@ export default function Donate() {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-12 py-5 bg-[#fcc15a] hover:bg-orange-400 text-slate-900 font-black text-xl rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:-translate-y-1 uppercase tracking-tight"
+            className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-12 py-5 bg-[var(--color-accent)] hover:bg-orange-400 text-slate-900 font-black text-xl rounded-xl shadow-lg shadow-orange-500/20 transition-all hover:-translate-y-1 uppercase tracking-tight"
           >
             <i className="fa-solid fa-heart"></i> Donate on Tiltify
           </a>

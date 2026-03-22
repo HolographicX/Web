@@ -10,17 +10,38 @@ export default function Home() {
     <div className="flex flex-col gap-16 pb-16">
       {/* HERO SECTION */}
       <section className="w-full pt-12 flex flex-col items-center">
-        <h1 className="text-5xl md:text-7xl font-bold text-[#000] mb-6 text-center tracking-tight">
-          HackFrom<span className="text-[#fcc15a]">Scratch</span>
-        </h1>
-        <p className="text-xl text-slate-800 mb-10 text-center max-w-2xl px-4">
+        <div className="flex justify-center items-center text-5xl md:text-7xl font-bold tracking-tight mb-6">
+          {/* HackFrom */}
+          <div className="relative">
+            {/* Stroke */}
+            <h1 className="absolute inset-0 text-transparent [-webkit-text-stroke:20px_var(--text)]">
+              HackFrom
+            </h1>
+            {/* Fill */}
+            <h1 className="relative text-[var(--text-light)]">HackFrom</h1>
+          </div>
+
+          {/* space */}
+          <div className="w-4"></div>
+
+          {/* Scratch */}
+          <div className="relative">
+            {/* Stroke */}
+            <h1 className="absolute inset-0 text-transparent [-webkit-text-stroke:20px_var(--color-accent)]">
+              Scratch
+            </h1>
+            {/* Fill */}
+            <h1 className="relative text-[var(--text-light)]">Scratch</h1>
+          </div>
+        </div>
+        <p className="text-xl text-[var(--text)] mb-10 text-center max-w-2xl px-4">
           A week-long charity stream/creative jam uniting Purdue creators to support the Scratch
           Foundation.
         </p>
 
         {/* Video Embed */}
         {/* <div className="w-full max-w-5xl px-4 mb-10">
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-slate-800 shadow-2xl shadow-orange-900/20">
+          <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-[var(--color-secondary)] shadow-2xl shadow-orange-900/20">
             <iframe
               src={liveUrl}
               className="absolute top-0 left-0 w-full h-full"
@@ -30,7 +51,7 @@ export default function Home() {
           </div>
         </div> */}
         <div className="w-full max-w-5xl px-4 mb-10">
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-slate-800 shadow-2xl shadow-orange-900/20">
+          <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-[var(--color-secondary)] shadow-2xl shadow-orange-900/20">
             <iframe
               className="absolute top-0 left-0 w-full h-full object-cover"
               src="https://www.youtube.com/embed/i-0tqnvjAkU?autoplay=1&loop=1&playlist=i-0tqnvjAkU&mute=1&controls=1&playsinline=1"
@@ -45,7 +66,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 px-4">
           <Link
             to="/donate"
-            className="px-8 py-4 bg-[#fcc15a] hover:bg-orange-400 text-white-500 font-bold text-lg rounded-lg shadow-lg transition-transform hover:-translate-y-1 text-center"
+            className="px-8 py-4 bg-[var(--color-accent)] hover:bg-orange-400 text-white-500 font-bold text-lg rounded-lg shadow-lg transition-transform hover:-translate-y-1 text-center"
           >
             Donate & Claim Rewards
           </Link>
@@ -53,14 +74,14 @@ export default function Home() {
             href={channelUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-slate-100 font-bold text-lg rounded-lg border border-slate-700 shadow-lg transition-transform hover:-translate-y-1 text-center"
+            className="px-8 py-4 bg-[var(--color-secondary)] hover:bg-slate-700 text-slate-100 font-bold text-lg rounded-lg border border-slate-700 shadow-lg transition-transform hover:-translate-y-1 text-center"
           >
             Join the YouTube Chat
           </a>
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 py-16 border-t border-slate-800">
+      <section className="max-w-6xl mx-auto px-4 py-16 border-t border-[var(--color-secondary)]">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Mission Video Embed */}
           <div className="rounded-2xl overflow-hidden border border-slate-700 shadow-xl aspect-video">
@@ -76,7 +97,7 @@ export default function Home() {
           {/* Mission Text */}
           <div>
             <h2 className="text-3xl font-bold mb-6 text-black">
-              Why We Support the <span className="text-[#fcc15a]">Scratch Foundation</span>
+              Why We Support the <span className="text-[var(--color-accent)]">Scratch Foundation</span>
             </h2>
             <p className="text-slate-900 mb-6 leading-relaxed">
               At Purdue, we've been given the tools to build the future. But for millions of kids,
@@ -90,7 +111,7 @@ export default function Home() {
 
       {/* DONATION GOAL PROGRESS */}
       <section className="max-w-4xl mx-auto w-full px-4">
-        <div className="bg-[#fcc15a] p-6 rounded-2xl border border-slate-700">
+        <div className="bg-[var(--color-accent)] p-6 rounded-2xl border border-slate-700">
           <div className="flex justify-between items-end mb-2">
             <div>
               <p className="text-white font-semibold uppercase tracking-wider text-sm">
@@ -102,7 +123,7 @@ export default function Home() {
             </div>
             <p className="text-xl font-bold text-white">$10,000</p>
           </div>
-          <div className="w-full bg-slate-900 rounded-full h-4 overflow-hidden border border-slate-700">
+          <div className="w-full bg-[var(--color-secondary-dark)] rounded-full h-4 overflow-hidden border border-slate-700">
             {/* Change the width percentage as donations come in */}
             <div
               className="bg-[#00fb00] h-4 rounded-full transition-all duration-1000"

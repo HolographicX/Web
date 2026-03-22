@@ -3,3 +3,69 @@
 html {
   scroll-behavior: smooth;
 }
+
+:root {
+  --color-accent: #EFA736;
+  --color-secondary: #4E95F6;
+  --color-secondary-dark: #6F85A4;
+  --text: #161616ff;
+  --text-light: rgb(243, 243, 243);
+  --text-grey: #e0e4f0;
+}
+
+@layer base {
+  h1 {
+    font-family: "ScratchFont", sans-serif;
+    -webkit-text-stroke: 1.2px currentColor;
+  }
+  h2 {
+    font-family: "ScratchFont", sans-serif;
+    -webkit-text-stroke: 0.8px currentColor;
+  }
+}
+
+@font-face {
+  font-family: "ScratchFont";
+  src: url("/fonts/BLACKBOYSONMOPEDS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-heading {
+  font-family: "ScratchFont", sans-serif;
+}
+.font-heading-bold {
+  font-family: "ScratchFont", sans-serif;
+  -webkit-text-stroke: 0.8px currentColor;
+}
+
+@theme {
+  --animate-flip-x: flip-x 5s ease-in-out infinite;
+}
+
+@keyframes flip-x {
+  0% {
+    transform: rotateY(0deg);
+  }
+  45% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  95% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* helpers for 3D flip */
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}

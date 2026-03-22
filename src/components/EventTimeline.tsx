@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useMemo, useState } from "react";
 
 interface StreamEvent {
   id: string;
@@ -180,7 +180,7 @@ export default function EventTimeline() {
 
   return (
     <section className="max-w-4xl mx-auto px-4 py-12">
-      <h2 className="text-4xl font-bold mb-10 text-[#fcc15a] text-center tracking-tight">
+      <h2 className="text-4xl font-bold mb-10 text-[var(--color-accent)] text-center tracking-tight">
         Stream Schedule
       </h2>
 
@@ -192,8 +192,8 @@ export default function EventTimeline() {
             onClick={() => setActiveDate(dateKey)}
             className={`px-5 py-2 rounded-full font-bold text-sm md:text-base transition-all duration-300 ${
               activeDate === dateKey
-                ? "bg-[#fcc15a] text-slate-900 shadow-[0_0_15px_rgba(249,115,22,0.4)] scale-105"
-                : "bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-slate-200"
+                ? "bg-[var(--color-accent)] text-slate-900 shadow-[0_0_15px_rgba(249,115,22,0.4)] scale-105"
+                : "bg-[var(--color-secondary-dark)] text-[var(--text-grey)] hover:bg-[var(--color-secondary)] hover:text-slate-200"
             }`}
           >
             {dateKey}
@@ -215,8 +215,8 @@ export default function EventTimeline() {
               className={`relative mb-8 ml-6 md:ml-10 p-6 rounded-2xl border transition-all duration-300
                 ${
                   isFinished
-                    ? "bg-slate-800/40 border-slate-700 grayscale opacity-50"
-                    : "bg-slate-800 border-slate-700 hover:border-orange-500/50 hover:-translate-y-1 hover:shadow-xl shadow-black/50"
+                    ? "bg-[var(--color-secondary)]/40 border-slate-700 grayscale opacity-50"
+                    : "bg-[#7CAEF3] border-slate-700 hover:bg-[var(--color-secondary)] hover:border-orange-500/50 hover:-translate-y-1 hover:shadow-xl shadow-black/50"
                 }`}
             >
               {/* Timeline Dot */}
@@ -225,7 +225,7 @@ export default function EventTimeline() {
                 ${
                   isFinished
                     ? "bg-slate-600"
-                    : "bg-[#fcc15a] shadow-[0_0_10px_rgba(249,115,22,0.8)]"
+                    : "bg-[var(--color-accent)] shadow-[0_0_10px_rgba(249,115,22,0.8)]"
                 }`}
               ></div>
 
@@ -238,7 +238,7 @@ export default function EventTimeline() {
                   >
                     {event.title}
                   </h3>
-                  <p className="text-sm text-slate-400 mt-2 font-medium tracking-wide flex items-center gap-2">
+                  <p className="text-sm text-[var(--text-grey)] mt-2 font-medium tracking-wide flex items-center gap-2">
                     <i className="fa-regular fa-clock"></i>
                     {eventTime.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}
                   </p>
