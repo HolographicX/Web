@@ -131,13 +131,17 @@ const scheduleData: StreamEvent[] = [
   },
   {
     title:
-      "Sighorse Panel feat. Kartavya Vashishtha, Grace Yoder, Arhan Chaudhary, Henry Rovnyak & Angela Qian",
+      "Sighorse Panel feat. Kartavya Vashishtha, Grace Yoder, Arhan Chaudhary, Henry Rovnyak, Angela Qian & Ishan Goel",
     time: "2026-04-03T20:05:00",
   },
   { title: "Improv Comedy Show feat. Ad Liberation", time: "2026-04-03T21:00:00" },
   {
-    title: "Creative Jam Highlights feat. the HackFromScratch Community",
+    title: "Metal Casting feat. Purdue American Foundry Society (AFS)",
     time: "2026-04-03T22:00:00",
+  },
+  {
+    title: "Creative Jam Highlights feat. the HackFromScratch Community",
+    time: "2026-04-03T22:15:00",
   },
   { title: "Countdown & Closing Ceremony", time: "2026-04-04T00:00:00" },
 ];

@@ -81,6 +81,11 @@ export default function Layout() {
       alt: "Purdue Music Producers",
       link: "https://discord.gg/UFDhq5VfaF",
     },
+    {
+      src: "/clubs/purdueafs.jpeg",
+      alt: "Purdue AFS Chapter",
+      link: "https://boilerlink.purdue.edu/organization/purdueamericanfoundrysociety",
+    },
   ];
 
   return (
@@ -292,6 +297,16 @@ export default function Layout() {
               className="text-slate-700 hover:text-[#FF4500] transition-all duration-300 hover:-translate-y-1"
             >
               <i className="fa-brands fa-reddit text-3xl"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/hackfromscratch/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-slate-700 hover:text-[#0a66c2] transition-all duration-300 hover:-translate-y-1"
+            >
+              <i className="fa-brands fa-linkedin text-3xl"></i>
             </a>
           </div>
 
