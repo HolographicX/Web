@@ -86,6 +86,11 @@ export default function Layout() {
       alt: "Purdue AFS Chapter",
       link: "https://boilerlink.purdue.edu/organization/purdueamericanfoundrysociety",
     },
+    {
+      src: "/clubs/cadenzapianoclub.jpg",
+      alt: "Cadenza Piano Club",
+      link: "https://www.instagram.com/cadenza.piano.club/",
+    },
   ];
 
   return (

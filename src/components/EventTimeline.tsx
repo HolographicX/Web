@@ -26,8 +26,7 @@ const scheduleData: StreamEvent[] = [
     time: "2026-03-28T12:00:00",
   },
   { title: "Fantasy Campaign Showcases", time: "2026-03-28T13:00:00" },
-  { title: "Cosplay Club", time: "2026-03-28T14:00:00" },
-  // { title: "Railside Robotics (Battlebots) Tournament", time: "2026-03-28T15:00:00" },
+  { title: "Cosplay 101 feat. Cosplay Creation & Appreciation Club", time: "2026-03-28T14:00:00" },
   {
     title: "D&D One Shot: The Treasure of Tealbeard",
     time: "2026-03-28T15:00:00",
@@ -80,7 +79,7 @@ const scheduleData: StreamEvent[] = [
     time: "2026-03-30T20:00:00",
   },
   {
-    title: "Live from Cary - Piano feat. Jason M. Dong, _ & _",
+    title: "Live from Cary - Piano feat. Jason M. Dong, Brandt Garippo & Allen Tan",
     time: "2026-03-31T18:00:00",
   },
   {
@@ -107,7 +106,7 @@ const scheduleData: StreamEvent[] = [
   },
   { title: "McCutcheon Mayhem Reloaded", time: "2026-04-01T20:00:00" },
   { title: "McCutcheon Mayhem - Meet the Cast & Bloopers", time: "2026-04-01T21:30:00" },
-  // { title: "Mario Kart Run Desert Bus feat. Run Club", time: "2026-04-01T12:00:00", isMilestone: true },
+  { title: "Mario Kart Run Desert Bus", time: "2026-04-01T12:00:00", isTarget: true },
   { title: "Wiley Radio Tinydesk Concert Setup", time: "2026-04-02T18:00:00" },
   { title: "Wiley Radio Tinydesk Concert - Real Nothing", time: "2026-04-02T18:30:00" },
   {
