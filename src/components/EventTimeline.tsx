@@ -106,7 +106,7 @@ const scheduleData: StreamEvent[] = [
   },
   { title: "McCutcheon Mayhem Reloaded", time: "2026-04-01T20:00:00" },
   { title: "McCutcheon Mayhem - Meet the Cast & Bloopers", time: "2026-04-01T21:30:00" },
-  { title: "Mario Kart Run Desert Bus", time: "2026-04-01T12:00:00", isTarget: true },
+  { title: "Mario Kart Run Desert Bus", time: "2026-04-02T12:00:00", isTarget: true },
   { title: "Wiley Radio Tinydesk Concert Setup", time: "2026-04-02T18:00:00" },
   { title: "Wiley Radio Tinydesk Concert - Real Nothing", time: "2026-04-02T18:30:00" },
   {
