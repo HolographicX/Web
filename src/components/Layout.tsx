@@ -304,7 +304,7 @@ export default function Layout() {
               <i className="fa-brands fa-reddit text-3xl"></i>
             </a>
 
-            <a
+            {/* <a
               href="https://www.linkedin.com/company/hackfromscratch/"
               target="_blank"
               rel="noopener noreferrer"
@@ -312,7 +312,7 @@ export default function Layout() {
               className="text-slate-700 hover:text-[#0a66c2] transition-all duration-300 hover:-translate-y-1"
             >
               <i className="fa-brands fa-linkedin text-3xl"></i>
-            </a>
+            </a> */}
           </div>
 
           <p className="text-slate-600 text-sm">HackFromScratch 2026.</p>
