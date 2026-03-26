@@ -97,7 +97,8 @@ export default function Home() {
           {/* Mission Text */}
           <div>
             <h2 className="text-3xl font-bold mb-6 text-black">
-              Why We Support the <span className="text-[var(--color-accent)]">Scratch Foundation</span>
+              Why We Support the{" "}
+              <span className="text-[var(--color-accent)]">Scratch Foundation</span>
             </h2>
             <p className="text-slate-900 mb-6 leading-relaxed">
               At Purdue, we've been given the tools to build the future. But for millions of kids,
@@ -121,7 +122,7 @@ export default function Home() {
                 $0 <span className="text-lg text-white font-normal">raised so far</span>
               </p>
             </div>
-            <p className="text-xl font-bold text-white">$10,000</p>
+            <p className="text-xl font-bold text-white">$5,000</p>
           </div>
           <div className="w-full bg-[var(--color-secondary-dark)] rounded-full h-4 overflow-hidden border border-slate-700">
             {/* Change the width percentage as donations come in */}
