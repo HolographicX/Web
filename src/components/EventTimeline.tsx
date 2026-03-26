@@ -37,7 +37,8 @@ const scheduleData: StreamEvent[] = [
     time: "2026-03-28T19:00:00",
   },
   {
-    title: "Cuphead Chair% 1v1 feat. Xander Kutulas & Peter Timpane",
+    title:
+      "Cuphead Chair% 1v1 feat. Xander Kutulas & Peter Timpane (Couch: Jayden Wijeyakulasuriya)",
     time: "2026-03-29T09:00:00",
     isInteractive: true,
   },
@@ -50,26 +51,28 @@ const scheduleData: StreamEvent[] = [
     time: "2026-03-29T12:30:00",
   },
   {
-    title: "Celeste Any% 1v1 feat. Cynthia Zetlan & LuxRei",
+    title: "Celeste Any% 1v1 feat. Cynthia Zetlan & LuxRei (Couch: Mint Deprest & Peter Timpane)",
     time: "2026-03-29T13:00:00",
   },
   {
-    title: "Undertale Genocide Any% (20 min head-start) feat. Benjamin",
+    title:
+      "Undertale Genocide Any% (20 min head-start) feat. Benjamin (Couch: Jayden Wijeyakulasuriya)",
     time: "2026-03-29T14:00:00",
     isInteractive: true,
   },
-  { title: "Tetris 1v1 feat. Kevin Huang & Niko Gratton", time: "2026-03-29T15:15:00" },
-  { title: "HackIndy - Highlights & Pitches", time: "2026-03-29T15:40:00" },
+  { title: "Tetris 1v1 feat. Kevin Huang, Niko Gratton & Eric Zhang", time: "2026-03-29T15:15:00" },
+  { title: "HackIndy - Highlights & Pitches", time: "2026-03-29T15:45:00" },
   {
     title: "The Haunted Mansion Machine feat. Boilermaker Rube Goldberg Team",
     time: "2026-03-29T18:00:00",
   },
+  { title: "Gravity Chess feat. Purdue Chess Club", time: "2026-03-29T19:00:00" },
   {
-    title: "Mario Kart 8 Lockout feat. Artus Mosquet & Josh",
-    time: "2026-03-29T19:00:00",
+    title:
+      "Mario Kart 8 2v2 Lockout feat. Artus Mosquet & Nathan Kilmer vs. Josh & Eric Park (Couch: Xander Kutulas & Peter Timpane)",
+    time: "2026-03-29T20:00:00",
     isInteractive: true,
   },
-  { title: "Gravity Chess feat. Purdue Chess Club", time: "2026-03-29T20:00:00" },
   {
     title: "Creative Code for Good feat. Creative Coding Club",
     time: "2026-03-30T18:00:00",
@@ -106,7 +109,11 @@ const scheduleData: StreamEvent[] = [
   },
   { title: "McCutcheon Mayhem Reloaded", time: "2026-04-01T20:00:00" },
   { title: "McCutcheon Mayhem - Meet the Cast & Bloopers", time: "2026-04-01T21:30:00" },
-  { title: "Mario Kart Run Desert Bus", time: "2026-04-02T12:00:00", isTarget: true },
+  {
+    title: "Mario Kart Run Desert Bus (Recorded on Thursday, Premiered on Friday)",
+    time: "2026-04-03T12:00:00",
+    isTarget: true,
+  },
   { title: "Wiley Radio Tinydesk Concert Setup", time: "2026-04-02T18:00:00" },
   { title: "Wiley Radio Tinydesk Concert - Real Nothing", time: "2026-04-02T18:30:00" },
   {
