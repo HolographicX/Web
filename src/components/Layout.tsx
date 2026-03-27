@@ -252,6 +252,14 @@ export default function Layout() {
               className="h-20 md:h-24 object-contain"
             />
           </a>
+
+          <a
+            href="https://www.instagram.com/purdue_search"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img src="/sponsors/search.jpeg" alt="SEARCH" className="h-20 md:h-24 object-contain" />
+          </a>
         </div>
 
         {/* Club Grid */}
