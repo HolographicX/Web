@@ -145,11 +145,11 @@ const scheduleData: StreamEvent[] = [
   { title: "Improv Comedy Show feat. Ad Liberation", time: "2026-04-03T21:00:00" },
   {
     title: "Metal Casting feat. Purdue American Foundry Society (AFS)",
-    time: "2026-04-03T22:00:00",
+    time: "2026-04-03T22:30:00",
   },
   {
     title: "Creative Jam Highlights feat. the HackFromScratch Community",
-    time: "2026-04-03T22:15:00",
+    time: "2026-04-03T22:45:00",
   },
   { title: "Countdown & Closing Ceremony", time: "2026-04-04T00:00:00" },
 ];
