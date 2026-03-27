@@ -11,15 +11,15 @@ export default function Donate() {
     {
       price: 10,
       name: "The Audio",
-      desc: "Your choice of the PMP Compilation CD or the SIGGD Echoes of Isovios OST CD!",
+      desc: "Your choice of the PMP Compilation CD or the SIGGD Echoes of Isovios OST CD and a custom printed receipt!",
       bg: "bg-[#A680FF]",
       image: "/rewards/pmp.png",
       image2: "/rewards/siggd.png",
     },
     {
-      price: 20,
+      price: 25,
       name: "The Lore",
-      desc: "Your choice of the Sighorse or the Choosen One books!",
+      desc: "Your choice of the Sighorse or the Choosen One books and a custom printed receipt!",
       bg: "bg-[#95D887]",
       image: "/rewards/creative-writing-club.png",
       image2: "/rewards/sighorse.png",
@@ -27,7 +27,7 @@ export default function Donate() {
     {
       price: 50,
       name: "The Shirt",
-      desc: "The official HackFromScratch multi-color t-shirt, printed on-demand just for you!",
+      desc: "The official HackFromScratch multi-color t-shirt, printed on-demand just for you and a custom printed receipt!",
       bg: "bg-[#84C1E2]",
       image: "/rewards/shirt-front.png",
       image2: "/rewards/shirt-back.png",
@@ -35,7 +35,7 @@ export default function Donate() {
     {
       price: 100,
       name: "VIP",
-      desc: "Literally everything. Shirt, both books, both CDs, all the swag, signed by the creators!",
+      desc: "Literally everything. Shirt, both books, both CDs, all the swag, signed by the creators (and a custom printed receipt)!",
       bg: "bg-[#D07AD8]",
       image: "/rewards/everything1.png",
       image2: "/rewards/everything2.png",
