@@ -4,7 +4,7 @@ import EventTimeline from "../components/EventTimeline";
 export default function Home() {
   // const channelId = "UCb89kHtc8hzLqaJMKDiKrRw";
   // const channelUrl = `https://www.youtube.com/channel/${channelId}/live`; // yt
-  const channelUrl = `https://www.twitch.tv/hackfromscratch` // twitch
+  const channelUrl = `https://www.twitch.tv/hackfromscratch`; // twitch
 
   return (
     <div className="flex flex-col gap-16 pb-16">
@@ -54,7 +54,7 @@ export default function Home() {
           <div className="relative w-full aspect-video rounded-xl overflow-hidden border-4 border-[var(--color-secondary)] shadow-2xl shadow-orange-900/20">
             <iframe
               className="absolute top-0 left-0 w-full h-full object-cover"
-              src="https://player.twitch.tv/?channel=hackfromscratch&parent=localhost&autoplay=true&muted=true"
+              src="[https://player.twitch.tv/?channel=hackfromscratch&parent=hackfromscratch.org&parent=www.hackfromscratch.org&autoplay=true&muted=true](https://player.twitch.tv/?channel=hackfromscratch&parent=hackfromscratch.org&parent=www.hackfromscratch.org&autoplay=true&muted=true)"
               title="Twitch live stream player"
               allowFullScreen
             ></iframe>
