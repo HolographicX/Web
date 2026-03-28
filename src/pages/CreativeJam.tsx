@@ -83,6 +83,16 @@ export default function CreativeJam() {
         </p>
       </div>
 
+      <div className="rounded-2xl overflow-hidden border border-slate-700 shadow-xl aspect-video mb-20">
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/wKPTugyLfTs"
+          title="Creative Jam Overview"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+
       {/* CATEGORIES & CRITERIA SECTION */}
       <section className="mb-20">
         <div className="flex flex-col lg:flex-row gap-12">
