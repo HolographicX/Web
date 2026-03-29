@@ -153,7 +153,7 @@ const scheduleData: StreamEvent[] = [
     title: "Creative Jam Highlights feat. the HackFromScratch Community",
     time: "2026-04-03T22:45:00-04:00",
   },
-  { title: "Countdown & Closing Ceremony", time: "2026-04-04T00:00:00-04:00" },
+  { title: "Countdown & Closing Ceremony", time: "2026-04-04T00:00:00-04:00", location: "Bechtel Innovation and Design Center, 2nd Floor" },
 ];
 
 export default function EventTimeline() {
