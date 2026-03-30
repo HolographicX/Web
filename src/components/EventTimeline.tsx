@@ -83,7 +83,7 @@ const scheduleData: StreamEvent[] = [
   {
     title: "P3 - Purdue E3 feat. SIGGD & Game Devs at Purdue",
     time: "2026-03-30T20:00:00-04:00",
-    location: "PMU South Tower room 320"
+    location: "GQT Wabash Landing 9"
   },
   {
     title: "Live from Cary - Piano feat. Jason M. Dong, Brandt Garippo & Allen Tan",
